@@ -84,6 +84,14 @@ endif;
 		      	  </style>
 				<!-- WORKS HERE -->
 				<?php //endif; ?>
+				
+			</div>
+			<div class="title-container">
+				<?php the_title( '<h1 itemprop="name headline" class="entry-title">', '</h1>' ); ?>
+			</div>
+			<div class="post-excerpt">
+			<?php the_excerpt(); ?>
+			<div class="breadcrumbs entry-meta-details">
 				<span itemprop="datePublished" content="<?php the_date('c'); ?>"></span>
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<a href="<?= mh_author_url(); ?>" class="author-modify">
@@ -97,12 +105,7 @@ endif;
 						Main photo: <?php the_field('source_by'); ?>
 					<?php endif; ?>
 				</div>
-			</div>
-			<div class="title-container">
-				<?php the_title( '<h1 itemprop="name headline" class="entry-title">', '</h1>' ); ?>
-			</div>
-			<div class="post-excerpt">
-			<?php the_excerpt(); ?>
+			</div> 
 			<?php the_field('content'); ?>
 			</div>
 		</div>	
