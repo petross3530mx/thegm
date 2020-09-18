@@ -34,9 +34,19 @@
 		      	  </style>
 				<!-- WORKS HERE -->
 				<?php //endif; ?>
+				
+			</div>
+			<!---->
+			<!-- //REPAIR WORKS -->
+			<div class="title-container">
+				<?php the_title( '<h1 itemprop="name headline" class="entry-title">', '</h1>' ); ?>
+			</div>
+			<div class="post-excerpt">
+			<?php the_excerpt(); ?>
+			<div  class="breadcrumbs entry-meta-details">
 				<span itemprop="datePublished" content="<?php the_date('c'); ?>"></span>
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<a href="<?= mh_author_url(); ?>" class="author-modify">
+					<a href="<?= mh_author_url(); ?>"  rel="noopener" target="_blank" class="author-modify">
 						<span itemprop="name">By <?php the_author(); ?></span>
 					</a>
 				</span>
@@ -48,13 +58,6 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<!---->
-			<!-- //REPAIR WORKS -->
-			<div class="title-container">
-				<?php the_title( '<h1 itemprop="name headline" class="entry-title">', '</h1>' ); ?>
-			</div>
-			<div class="post-excerpt">
-			<?php the_excerpt(); ?>
 			<?php the_field('content'); ?>
 			</div>
 		</div>	
