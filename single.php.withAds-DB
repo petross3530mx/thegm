@@ -1,0 +1,262 @@
+<?php
+/*
+Template Name Posts: New Post Template
+*/
+?>
+<?php
+
+global $wp_query, $post;
+$pc = $post->post_content;
+
+get_header(); ?>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+
+  	var mapping1 = googletag.sizeMapping().
+    				addSize([320, 400], [[300, 250], [320, 50], [300, 50]]).
+    				addSize([750, 200], [728, 90]).
+					build();
+
+	var mapping970 = googletag.sizeMapping().
+    				addSize([320, 400], [300, 250]).
+    				addSize([800, 400], [728, 90]).
+    				addSize([1024, 400], [[970, 250],[728, 90]]).
+					build();
+    
+	
+  	googletag.defineSlot('/21714348041/right_sidebar_300x600', [300, 600], 'div-gpt-ad-1542994450852-0').addService(googletag.pubads());
+    googletag.defineSlot('/21714348041/after_first_page_728x90', [728, 90] , 'div-gpt-ad-1542986592412-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+    
+    <?php if ( strpos($post->post_content, 'div-gpt-ad-1542995381303-0') ){ ?>
+			googletag.defineSlot('/21714348041/in_article_300x250_1', [300, 250], 'div-gpt-ad-1542995381303-0').addService(googletag.pubads());
+	<?php }; ?>
+
+	<?php if ( strpos($post->post_content, 'div-gpt-ad-1542997869720-0') ){ ?>
+			googletag.defineSlot('/21714348041/in_article_300x250_2', [300, 250], 'div-gpt-ad-1542997869720-0').addService(googletag.pubads());
+	<?php }; ?>
+
+	<?php if ( strpos($post->post_content, 'div-gpt-ad-1542998007011-0') ){ ?>
+			googletag.defineSlot('/21714348041/in_article_300x250_2', [300, 250], 'div-gpt-ad-1542998007011-0').addService(googletag.pubads());
+	<?php }; ?>
+
+	<?php if ( strpos($post->post_content, 'div-gpt-ad-1542998055687-0') ){ ?>
+			googletag.defineSlot('/21714348041/in_article_300x250_2', [300, 250], 'div-gpt-ad-1542998055687-0').addService(googletag.pubads());
+	<?php }; ?>
+	<?php
+	$d  = "<!--cut_off-->";
+	$pieces = explode($d, $pc);
+	$counter = count($pieces);
+
+	if ($counter>1) { ?>
+	var cut_off_1 = googletag.defineSlot('/21714348041/MH_full_width_970x250_1', [970, 250], 'div-gpt-ad-1545338539298-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+	<?php };
+	if($counter>2){ ?>
+	var cut_off_2 = googletag.defineSlot('/21714348041/MH_full_width_970x250_2', [970, 250], 'div-gpt-ad-1545423757024-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+	<?php }; 
+	if($counter>3){ ?>
+	var cut_off_3 = googletag.defineSlot('/21714348041/MH_full_width_970x250_3', [970, 250], 'div-gpt-ad-1545423810799-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+	<?php }; ?>
+
+	<?php if($counter>4){ ?>
+	var cut_off_4 = googletag.defineSlot('/21714348041/MH_full_width_970x250_4', [970, 250], 'div-gpt-ad-1546600851669-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+	<?php }; ?>
+
+	<?php if($counter>5){ ?>
+	var cut_off_5 = googletag.defineSlot('/21714348041/MH_full_width_970x250_5', [970, 250], 'div-gpt-ad-1546600875945-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+	<?php }; ?>
+	
+	<?php if($counter>1){ ?>
+	var cutoff_sidebar_1 = googletag.defineSlot('/21714348041/MH_cutoff_sidebar_1', [300, 600], 'div-gpt-ad-1545426903960-0').addService(googletag.pubads());
+	<?php }; ?>
+	<?php if($counter>2){ ?>
+	var cutoff_sidebar_2 = googletag.defineSlot('/21714348041/MH_cutoff_sidebar_2', [300, 600], 'div-gpt-ad-1545427439313-0').addService(googletag.pubads());
+	<?php }; ?>
+	<?php if($counter>3){ ?>
+	var cutoff_sidebar_3 = googletag.defineSlot('/21714348041/MH_cutoff_sidebar_3', [300, 600], 'div-gpt-ad-1545428270736-0').addService(googletag.pubads());
+	<?php }; ?>
+	<?php if($counter>4){ ?>
+	var cutoff_sidebar_4 = googletag.defineSlot('/21714348041/MH_cutoff_sidebar_4', [300, 600], 'div-gpt-ad-1546600824028-0').addService(googletag.pubads());
+	<?php }; ?>
+	<?php if($counter>5){ ?>
+	var cutoff_sidebar_5 = googletag.defineSlot('/21714348041/MH_cutoff_sidebar_5', [300, 600], 'div-gpt-ad-1546600794923-0').addService(googletag.pubads());
+	<?php }; ?>
+
+
+
+    googletag.defineSlot('/21714348041/MH_after_content_970x250', [970, 250], 'div-gpt-ad-1545432329814-0').defineSizeMapping(mapping970).addService(googletag.pubads());
+    googletag.defineSlot('/21714348041/MH_mobile_sticky', [320, 50], 'div-gpt-ad-1544453925088-0').addService(googletag.pubads());
+
+
+    googletag.pubads().enableLazyLoad({
+	    fetchMarginPercent: 500,  // Fetch slots within 5 viewports.
+	    renderMarginPercent: 200,  // Render slots within 2 viewports.
+	    mobileScaling: 2.0  // Double the above values on mobile.
+	});
+    googletag.enableServices();
+
+ 	// Set timer to refresh slot every 60 seconds
+    // setInterval(function(){googletag.pubads().refresh([cut_off_1],[cut_off_2],[cut_off_3]);}, 60000);
+    // setInterval(function(){googletag.pubads().refresh([cutoff_sidebar_1],[cutoff_sidebar_2],[cutoff_sidebar_3]);}, 45000);
+  });
+</script>
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+	<?php while ( have_posts() ) : the_post();
+			$is_test = isset($_GET['test']);
+			$is_cut = stristr($pc, "<!--cut_off-->");
+
+
+			//if($is_test || $is_cut){
+				get_template_part( 'template-parts/content', 'cut-off');
+			//} else {
+			//	get_template_part( 'template-parts/content', 'singlev2');
+			//};
+
+		endwhile; ?>
+	</main>
+	<!--  -->
+	<!-- /21714348041/MH_after_next_300x250 -->
+	<div id='div-gpt-ad-1545432329814-0' style='margin: 20px auto 0; text-align: center;'>
+		<script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1545432329814-0'); });
+		</script>
+	</div>
+	<!--  -->
+</div>
+
+
+
+<div id="mobi_b_widget">
+
+</div>
+
+
+
+<?php 
+$current_page = isset($wp_query->query['page']) ? $wp_query->query['page'] < 1 ? 1 : $wp_query->query['page'] : 1;
+ads_for_single_post($current_page, $post->ID);
+$category = get_the_category();
+$posts = getSingleRandomPost($count = 4, $category); ?>
+<div class="col-12 relatedposts-container cb-cat-container" id="rf-wrapper">
+<div class="inter-t" >
+	<?php if (!empty($posts)) { ?>
+		<div  class="mk_related_caption otherposts"><span class="read-next">MORE MUST-READ ARTICLES</span><em class="em-next"></em></div>
+			<div class="new_related clearfix" id="rf-posts">
+			<?php renderRelatedFooterPost($posts); ?>
+			</div>
+		</div>
+	<?php } ?>
+</div>
+
+</div>
+
+<div class="prev-post post-nav"><i class="icon-arrow"></i><?php  previous_post_link( '%link', 'Prev', TRUE); ?></div>
+<div class="next-post post-nav"><i class="icon-arrow"></i><?php  next_post_link( '%link', 'Next', TRUE); ?></div>
+
+<style>
+.post-nav {
+    position: fixed;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+.next-post {
+    position: fixed;
+    top: 50%;
+    right: -59px;
+}
+.prev-post {
+    position: fixed;
+    top: 50%;
+    left: -59px;
+}
+.post-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background: #000;
+    border-radius: 50%;
+    width: 118px;
+    height: 118px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(33,43,53,.24);
+    transition: .2s ease-out;
+    will-change: background-color,border-color,color;
+}
+.post-nav a:hover {
+    box-shadow: 0 8px 12px 0 rgba(33,43,53,.24);
+}
+.next-post a {
+    margin-left: 10px;
+    padding-left: 17px;
+}
+.prev-post a {
+    margin-right: 10px;
+    padding-left: 70px;
+    text-align: left;
+}
+.post-nav a:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.next-post a:before {
+    transform: rotate(-45deg);
+    margin-left: 2px;
+}
+.prev-post a:before {
+    transform: rotate(130deg);
+    margin-left: 6px;
+}
+@media screen and (max-width: 768px) {
+    .prev-post {
+        display: none;
+    }
+    .next-post {
+        right: -40px;
+    }
+    .next-post a {
+        text-indent: -9999;
+        margin-left: 10px;
+        width: 85px;
+        height: 85px;
+        padding-top: 31px;
+        padding-left: 10px;
+        font-size: 0;
+    }
+    .next-post a:before {
+        transform: rotate(-45deg);
+        margin-left: 0px;
+    }
+}
+</style>
+	
+<?php
+get_footer();
+
+//Long posts should require a higher limit, see http://core.trac.wordpress.org/ticket/8553
+@ini_set('pcre.backtrack_limit', 500000);
