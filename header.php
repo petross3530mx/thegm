@@ -19,7 +19,6 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 
-	<!-- Customizing hrefLang meta tag -->
 	<?php 
 		  if(is_paged()){
 				$addit = 'page/'.get_query_var('paged');	
@@ -27,17 +26,6 @@
 		  		$addit = '';
 		  };
 	?>
-	<?php
-		 if (is_category()) {
-				$queried_object = get_queried_object(); 
-				$term_id = $queried_object->term_id;?>
-				<link rel="alternate" href="<?php echo get_term_link($term_id).$addit; ?>" hreflang="en-us" />
-	<?php } elseif (is_author()) {
-		?>
-				<link rel="alternate" href="<?php echo home_url() . '/author/' . get_the_author_meta( 'user_nicename').'/'.$addit; ?>" hreflang="en-us" />
-	<?php } else { ?>
-				<link rel="alternate" href="<?php the_permalink(); ?>" hreflang="en-us" />
-	<?php } ?>
 
     <link rel="stylesheet" href="/wp-content/themes/thegm/css/header.css">
 <link href="<?php bloginfo('template_url'); ?>/img/icons/favicon.png" rel="shortcut icon" type="image/png"><link href="<?php bloginfo('template_url'); ?>/img/icons/apple-touch-icon.png" rel="apple-touch-icon"><link href="<?php bloginfo('template_url'); ?>/img/icons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"><link href="<?php bloginfo('template_url'); ?>/img/icons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"><link href="<?php bloginfo('template_url'); ?>/img/icons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
