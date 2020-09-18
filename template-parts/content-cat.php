@@ -12,7 +12,7 @@
 </div>
 	<div class="col-6">
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title fh2"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 				<?php the_excerpt(); ?>
