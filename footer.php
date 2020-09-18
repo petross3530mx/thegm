@@ -891,6 +891,8 @@ strong {
 header.site-header, .footer-third-line, .category-layout-v2 .cb-cat-header { padding: 0 1em; transition-duration: 0.7s; }
 
 @media screen and (max-width: 768px) {
+	.author-col{text-align: justify;}.author-col h1{text-align:center}.author-roles{text-align:center}.author-image { max-width: 150px; display: block; margin: auto; float: none;}
+.author-roles-item{display:block; margin: auto}.fsl-list.author-list{margin-left: 0}
 	.widget-title {
 		display: block;
 	}
