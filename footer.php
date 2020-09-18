@@ -1085,14 +1085,14 @@ a.backtoTop {margin: 0 auto;display: inline-block;color: black;padding: 5px 8px;
 .author-details.cb-cat-container {margin-top: 50px;margin-bottom: 50px;margin-left: 10%;margin-right: 10%;}
 .author-col {display: inline-block;vertical-align: middle;}
 .author-col:nth-child(1) {
-    padding-right: 50px;
-    width: 200px;
+
+
 }
 .author-col:nth-child(2) {
     width: calc(100% - 210px);
 }
 .author-col h1 {margin: 10px 0;line-height: 1;}
-.author-image {border-radius: 50%;max-width: 150px;}
+.author-image {border-radius: 50%;max-width: 150px;margin: 22px 12px 12px 0px; display: inline-block;float:left; border-radius: 0}
 .author-roles {margin-top: 3px;font-weight: bold;font-style: italic;font-size: 14px;text-transform: uppercase;}
 .author-roles-item {margin-right: 20px;}
 .author-list li {background-color: black;}
@@ -1127,7 +1127,8 @@ a.backtoTop {margin: 0 auto;display: inline-block;color: black;padding: 5px 8px;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {.author-col{text-align: justify;}.author-col h1{text-align:center}.author-roles{text-align:center}.author-image { max-width: 150px; display: block; margin: auto; float: none;}
+.author-roles-item{display:block; margin: auto}.fsl-list.author-list{margin-left: 0}
 .bp-posts-v2 .row {flex-wrap: wrap;display: flex;}
 .bp-posts-v2 .col-p {padding-bottom: 20px;}	
 .pad-20 {padding: 0 5px;}
@@ -1331,7 +1332,7 @@ div.flex-nav {display: none;}
 	.c-formatted .bp-title h2{
 		margin-top: 25px;
 	}
-	.top-posts-v2 .col-p h3 {
+	.top-posts-v2 .col-p h3, .top-posts-v2 .col-p h2 {
 		font-weight: 400;
 	}
 }

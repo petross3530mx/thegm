@@ -11,13 +11,9 @@ get_header(); ?>
 <div id="cb-content" class="wrapfs wrap clearfix">
 
 <div class="author-details cb-cat-container">
+	<?php $author_id = get_the_author_meta('id'); ?>
 	<div class="author-col">
-		<?php 
-			$author_id = get_the_author_meta('id');
-		?>
-		<img src="<?php the_field('user_photo', 'user_'. $author_id) ?>" alt="" class="author-image">
-	</div>
-	<div class="author-col">
+		<img src="<?php the_field('user_photo', 'user_'. $author_id) ?>" alt="" class="posts-author-img author-image">
 		<h1><?php the_author_meta('first_name'); ?>  <?php the_author_meta('last_name'); ?></h1>
 		<div class="author-roles">
 			<span class="author-roles-item">
