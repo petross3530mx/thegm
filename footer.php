@@ -10,10 +10,16 @@
  */
 
 ?>
-
+<style>
+@media (max-width:768px){
+{.author-col{text-align: justify;}.author-col h1{text-align:center}.author-roles{text-align:center}.author-image { max-width: 150px; display: block; margin: auto; float: none;}
+.author-roles-item{display:block; margin: auto}.fsl-list.author-list{margin-left: 0}
+}</style>
+</div>
 		</div><!-- #content -->
 <?php if(is_single()){ ?>
 		<style>
+		  
 		  @media screen and (max-width: 500px) {
 		  .footersticky
 		   {
