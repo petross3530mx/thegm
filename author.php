@@ -63,7 +63,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="p-cont-r category-posts-wrap">
+<div class="p-cont-r category-posts-wrap author-posts">
 		<?php query_posts($query_string . '&orderby=modified'); ?>
 		<?php 
 		if(have_posts()){ while(have_posts()) { the_post();
