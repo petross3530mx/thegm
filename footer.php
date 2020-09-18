@@ -826,14 +826,13 @@ ul.rel-array li > a {
 .author-details.cb-cat-container {margin-top: 50px;margin-bottom: 50px;margin-left: 10%;margin-right: 10%;}
 .author-col {display: inline-block;vertical-align: middle;}
 .author-col:nth-child(1) {
-    padding-right: 50px;
-    width: 200px;
+
 }
 .author-col:nth-child(2) {
     width: calc(100% - 210px);
 }
 .author-col h1 {margin: 10px 0;line-height: 1;}
-.author-image {border-radius: 50%;}
+.author-image {border-radius: 0;max-width: 150px;margin: 22px 12px 12px 0px; display: inline-block;float:left;}
 .author-roles {margin-top: 3px;font-weight: bold;font-style: italic;font-size: 14px;text-transform: uppercase;}
 .author-roles-item {margin-right: 20px;}
 .author-list li {background-color: black;}
