@@ -832,7 +832,7 @@ ul.rel-array li > a {
     width: calc(100% - 210px);
 }
 .author-col h1 {margin: 10px 0;line-height: 1;}
-.author-image {border-radius: 0;max-width: 150px;margin: 22px 12px 12px 0px; display: inline-block;float:left;}
+.author-image {border-radius: 0;max-width: 25%;margin: 22px 12px 12px 0px; display: inline-block;float:left;}
 .author-roles {margin-top: 3px;font-weight: bold;font-style: italic;font-size: 14px;text-transform: uppercase;}
 .author-roles-item {margin-right: 20px;}
 .author-list li {background-color: black;}
@@ -891,7 +891,7 @@ strong {
 header.site-header, .footer-third-line, .category-layout-v2 .cb-cat-header { padding: 0 1em; transition-duration: 0.7s; }
 
 @media screen and (max-width: 768px) {
-	.author-col{text-align: justify;}.author-col h1{text-align:center}.author-roles{text-align:center}.author-image { max-width: 150px; display: block; margin: auto; float: none;}
+	.author-col{text-align: justify;}.author-col h1{text-align:center}.author-roles{text-align:center}.author-image { max-width: 100%; display: block; margin: auto; float: none;}
 .author-roles-item{display:block; margin: auto}.fsl-list.author-list{margin-left: 0}
 	.widget-title {
 		display: block;
