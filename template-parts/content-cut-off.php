@@ -94,7 +94,7 @@ endif;
 			<div class="breadcrumbs entry-meta-details">
 				<span itemprop="datePublished" content="<?php the_date('c'); ?>"></span>
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<a href="<?= mh_author_url(); ?>" class="author-modify">
+					<a href="<?= mh_author_url(); ?>" class="author-modify" rel="noopener" target="_blank" >
 						<span itemprop="name">By <?php the_author(); ?></span>
 					</a>
 				</span>
